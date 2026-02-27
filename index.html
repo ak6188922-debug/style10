@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo" id="logo-trigger" style="cursor: pointer;">
+                    <h1>Edgecut</h1>
+                </div>
+                <button class="menu-btn" id="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <nav class="nav" id="nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#furniture" class="nav-link">Furniture</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="login-btn">Login</button>
+                    <button class="search-btn"><i class="fas fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="modal" id="logo-modal">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-body">
+                <h2>مرحباً بك في Edgecut</h2>
+                <p>نحن متخصصون في توفير أفضل أنواع الأثاث بجودة عالية وأسعار منافسة.</p>
+                <h3>خدماتنا:</h3>
+                <ul>
+                    <li>تصميم أثاث حسب الطلب</li>
+                    <li>توصيل سريع وآمن</li>
+                    <li>ضمان جودة المنتجات</li>
+                    <li>خدمة عملاء متميزة</li>
+                </ul>
+                <p><strong>تواصل معنا:</strong></p>
+                <p class="copyable" data-copy="+01 1024428446">📞 <span>+01 1024428446</span> <i class="fas fa-copy"></i></p>
+                <p class="copyable" data-copy="akamal413@yahoo.com">📧 <span>akamal413@yahoo.com</span> <i class="fas fa-copy"></i></p>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h2>For All Your<br>Furniture Needs</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus quidem maiores perspiciatis, illo maxime voluptatem a itaque suscipit.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="document.querySelector('#furniture').scrollIntoView({behavior: 'smooth'})">Contact Us</button>
+                        <button class="btn btn-secondary" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})">About Us</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="slider-img.png" alt="Furniture">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="furniture" id="furniture">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Furniture</h2>
+                <p>which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't an</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="f1.png" alt="Brown Chair">
+                    </div>
+                    <div class="product-info">
+                        <h5>brown Chair Design</h5>
+                        <div class="product-footer">
+                            <span class="price">$ 100.00</span>
+                            <button class="btn-small">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="f2.png" alt="Double Bed">
+                    </div>
+                    <div class="product-info">
+                        <h5>Double Bed Design</h5>
+                        <div class="product-footer">
+                            <span class="price">$ 200.00</span>
+                            <button class="btn-small">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="f3.png" alt="House Chair">
+                    </div>
+                    <div class="product-info">
+                        <h5>House Chair Design</h5>
+                        <div class="product-footer">
+                            <span class="price">$ 200.00</span>
+                            <button class="btn-small">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="f4.png" alt="Brown Table">
+                    </div>
+                    <div class="product-info">
+                        <h5>brown Table Design</h5>
+                        <div class="product-footer">
+                            <span class="price">$ 100.00</span>
+                            <button class="btn-small">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="f5.png" alt="Blue Chair">
+                    </div>
+                    <div class="product-info">
+                        <h5>Blue Chair Design</h5>
+                        <div class="product-footer">
+                            <span class="price">$ 200.00</span>
+                            <button class="btn-small">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="f6.png" alt="Brown Table">
+                    </div>
+                    <div class="product-info">
+                        <h5>Brown Table Design</h5>
+                        <div class="product-footer">
+                            <span class="price">$ 200.00</span>
+                            <button class="btn-small">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="about-img.png" alt="About Us">
+                </div>
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolorem eum consequuntur ipsam repellat dolor soluta aliquid laborum, eius odit consectetur vel quasi in quidem, eveniet ab est corporis tempore.
+
+</p>
+                   
+                    <ul style="list-style: none; color: #666; margin-left: 0;">
+                       
+                    </ul>
+                    <button class="btn btn-primary" style="margin-top: 20px;">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Blog</h2>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="b1.jpg" alt="Blog 1">
+                    </div>
+                    <div class="blog-content">
+                        <h5>Look even slightly believable. If you are</h5>
+                        <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="b2.jpg" alt="Blog 2">
+                    </div>
+                    <div class="blog-content">
+                        <h5>Anything embarrassing hidden in the middle</h5>
+                        <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="b3.jpg" alt="Blog 3">
+                    </div>
+                    <div class="blog-content">
+                        <h5>Molestias magni natus dolores odio commodi. Quaerat!</h5>
+                        <p>alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <div class="container">
+            <div class="section-header">
+                <h2>Testimonial</h2>
+            </div>
+            <div class="testimonial-carousel" id="testimonial-carousel">
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-image">
+                            <img src="client.jpg" alt="Client">
+                        </div>
+                        <div class="testimonial-text">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <h6>Siaalya</h6>
+                            <p>It is a long established fact that a reader will be distracted by the readable cIt is a long established fact that a reader will be distracted by the readable c</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-image">
+                            <img src="client.jpg" alt="Client">
+                        </div>
+                        <div class="testimonial-text">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <h6>ِAhmed</h6>
+                            <p>It is a long established fact that a reader will be distracted by the readable cIt is a long established fact that a reader will be distracted by the readable c</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-item">
+                    <div class="testimonial-content">
+                        <div class="testimonial-image">
+                            <img src="client (1).jpg" alt="Client">
+                        </div>
+                        <div class="testimonial-text">
+                            <div class="quote-icon">
+                                <i class="fas fa-quote-left"></i>
+                            </div>
+                            <h6>Siaalya</h6>
+                            <p>It is a long established fact that a reader will be distracted by the readable cIt is a long established fact that a reader will be distracted by the readable c</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-controls">
+                <button class="carousel-prev" id="carousel-prev">
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+                <button class="carousel-next" id="carousel-next">
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Your Phone">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p class="copyable" data-copy="+01 123455678990">Call : <span>+01 123455678990</span> <i class="fas fa-copy" style="cursor: pointer; margin-left: 10px; font-size: 14px; color: #999;"></i></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p class="copyable" data-copy="demo@gmail.com">Email : <span>demo@gmail.com</span> <i class="fas fa-copy" style="cursor: pointer; margin-left: 10px; font-size: 14px; color: #999;"></i></p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Location</p>
+                    </div>
+                    <div style="margin-top: 40px; border-radius: 8px; overflow: hidden; height: 300px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                        <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.2655145627457!2d51.4773!3d25.2854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45d6f8b8b8b8b!2z2KPZhdih2YjZhg!5e0!3m2!1sar!2s!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#furniture">Furniture</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Instagram Feeds</h4>
+                    <div class="instagram-feeds">
+                        <img src="f1.png" alt="Instagram 1">
+                        <img src="f2.png" alt="Instagram 2">
+                        <img src="f3.png" alt="Instagram 3">
+                        <img src="f4.png" alt="Instagram 4">
+                        <img src="f5.png" alt="Instagram 5">
+                        <img src="f6.png" alt="Instagram 6">
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Sign Up to Our Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 All Rights Reserved By <a href="https://html.design/">Free Html Templates</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="style.js"></script>
+</body>
+</html>
