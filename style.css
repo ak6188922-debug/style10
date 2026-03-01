@@ -6,9 +6,11 @@
 }
 
 :root {
-    --primary-color: #111;
+    /* primary color used for buttons/links; not white/black */
+    --primary-color: #007bff;
     --secondary-color: #fff;
-    --text-color: #333;
+    /* unified text color for all content (not black) */
+    --text-color: #555;
     --light-bg: #f4f4f4;
     --border-color: #ddd;
 }
@@ -34,8 +36,9 @@ body {
 
 
 .header {
-    background-color: #fff; /* changed to white */
-    color: #111; /* dark text */
+    background-color: #fff; 
+    /* use global text color rather than black */
+    color: var(--text-color); 
     padding: 20px 0;
     position: sticky;
     top: 0;
@@ -59,7 +62,7 @@ body {
 }
 
 .logo:hover h1 {
-    color: #ccc;
+    color: #cccc;
     transform: scale(1.05);
 }
 
@@ -70,7 +73,8 @@ body {
 }
 
 .nav-link {
-    color: #111;
+   
+    color: #000;
     text-decoration: none;
     font-size: 16px;
     transition: color 0.3s ease;
@@ -79,7 +83,8 @@ body {
 }
 
 .nav-link:hover {
-    color: #555;
+    /* darker blue on hover to remain visible */
+    color: #0056b3;
 }
 
 .nav-link.active {
@@ -92,7 +97,7 @@ body {
     display: none;
     background: none;
     border: none;
-    color: var(--secondary-color);
+    color: #000;
     font-size: 24px;
     cursor: pointer;
     padding: 0;

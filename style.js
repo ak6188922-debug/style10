@@ -1,5 +1,4 @@
 
-// Copy to Clipboard Feature
 document.querySelectorAll('.copyable').forEach(element => {
     element.style.cursor = 'pointer';
     element.style.transition = 'all 0.3s ease';
@@ -7,13 +6,10 @@ document.querySelectorAll('.copyable').forEach(element => {
     element.addEventListener('click', function() {
         const textToCopy = this.getAttribute('data-copy');
         
-        // Copy to clipboard
         navigator.clipboard.writeText(textToCopy).then(() => {
-            // Show feedback
             const originalContent = this.innerHTML;
             this.innerHTML = '<span style="color: #4CAF50; font-weight: bold;">✓ تم النسخ!</span>';
             
-            // Revert after 2 seconds
             setTimeout(() => {
                 this.innerHTML = originalContent;
             }, 2000);
@@ -23,7 +19,6 @@ document.querySelectorAll('.copyable').forEach(element => {
         });
     });
     
-    // Add hover effect
     element.addEventListener('mouseenter', function() {
         this.style.color = '#111';
         this.style.fontWeight = 'bold';
